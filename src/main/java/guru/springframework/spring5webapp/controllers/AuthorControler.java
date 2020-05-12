@@ -19,6 +19,7 @@ public class AuthorControler
     @RequestMapping("/authors")
     public String getAuthors(Model model)
     {
+        System.out.println("Author controler");
         model.addAttribute("authors",authorRepository.findAll());
         return "authors/list";
     }
