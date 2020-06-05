@@ -1,5 +1,7 @@
 package guru.springframework.spring5webapp.domain;
 
+import org.springframework.context.annotation.Profile;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
