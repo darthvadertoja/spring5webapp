@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>nowe konto:</title>
+</head>
+<body>
+    <form action="#" th:action="@{/zapiszKonto}" th:object="${konto}" method="post">
+        <span>SALDO:</span> <input type="text" th:field="*{saldo}"><BR>
+        <span>Nazwa wlasci:</span> <input type="text" th:field="*{nazwaWlasciciela}"><BR>
+        <span>Nr konta:</span> <input type="text" th:field="*{nrKonta}"><BR>
+        <button type="submit">Utworz nowe konto!</button>
+    </form>
+</body>
+</html>

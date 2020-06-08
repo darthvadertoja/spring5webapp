@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Nr konta</th>
+        <th>Wlasciciel</th>
+        <th>SALDO</th>
+    </tr>
+    </thead>
+<tr th:each="konto : ${listaKont}">
+    <td th:text="${konto.nrKonta}"> Numer konta </td>
+    <td th:text="${konto.nazwaWlasciciela}"> Nazwa wlasciciela konta </td>
+    <td th:text="${konto.saldo}">Saldo </td>
+</tr>
+</table>
+
+</body>
+</html>
