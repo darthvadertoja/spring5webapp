@@ -1,6 +1,5 @@
 package guru.springframework.spring5webapp.controllers;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import guru.springframework.spring5webapp.domain.LoginForm;
 import guru.springframework.spring5webapp.services.KontoBankoweService;
 import org.springframework.stereotype.Controller;
