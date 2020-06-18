@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<style type="text/css">
+    label {
+        display: inline-block;;
+        width: 200px;
+        margin: 5px;
+        text-align: Right;
+        text-line-through: double;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja w systemie</title>
+</head>
+<body>
+<h1>Rejestracja nowego uzytkownika:</h1>
+<form action="#" class="label-logonpa-verybright" th:action="@{/register}" th:object="${user}" method="post">
+    <label display="inline-block"  for="username">Nazwa uzytkownika</label>
+    <input type="text" id="username" name="username" autofocus="autofocus"/>
+    <br>
+    <label for="password">Haslo</label>
+    <input type="password" id="password" name="password"/>
+    <br>
+    <label>Czy uzytkownik Premium?</label>
+    <input type="checkbox" id="czyUzytkownikPremium" checked="checked" name="czyUzytkownikPremium">
+    <br>
+    <label>Plec:</label>
+    <input type="radio" id="Kobieta" name="Kobieta" checked="checked">Kobieta
+    <input type="radio" id="Mezczyzna" name="Mezczyzna">Mezczyzna
+    <input class="ui-icon-calculator" type="radio" id="Inna" name="Inna">Inna
+    <br>
+    <label>Napisz cos o sobie:</label>
+    <textarea rows="4" cols="2"></textarea>
+    <br>
+    <label>typ uzytkownika</label>
+    <select>
+        <option value="VIP">Uzytkownik klasy VIP</option>
+        <option value="Standard" >Uzytkownik klasy Premium</option>
+        <option value="Poor" >Uzytkownik klasy Basic</option>
+    </select>
+    <br>
+    <label>Data urodzenia:</label>
+    <input type="date"  name="dataUrodzenia"/>
+    <br>
+    <label>Data rejestracji:</label>
+    <input type="color"  name="dataUrodzenia"/>
+    <br>
+    <label>Data rejestracji:</label>
+    <input type="email"    name="dataUrodzenia"/>
+    <br>
+</form>
+</body>
+</html>
